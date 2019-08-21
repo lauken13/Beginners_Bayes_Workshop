@@ -1,3 +1,4 @@
+// hierarchical model
 data {
   int<lower=1> N;
   int<lower=0> complaints[N];
