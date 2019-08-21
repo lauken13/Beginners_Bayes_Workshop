@@ -826,7 +826,7 @@ correspond to spots where sampler gets stuck.
 # assign to object so we can compare to another plot later
 scatter_with_divs <- mcmc_scatter(
   as.array(fit_hier_NB),
-  pars = c("mu[4]", "sigma_mu"),
+  pars = c("mu[3]", "sigma_mu"),
   # look at sigma on log-scale (what Stan uses under the hood for positive parameters)
   transform = list("sigma_mu" = "log"), 
   size = 1,
@@ -923,7 +923,7 @@ You should have no divergences (or only a few) this time and much improved
 effective sample sizes:
 
 ```{r fit_hier_NB_ncp-ESS}
-print(fit_hier_NB_ncp, pars = c('sigma_mu','beta','alpha','phi','mu'))
+print(fit_hier_NB_ncp, pars = c('sigma_mu','beta','alpha','phi','mu')) # optional 'probs' argument
 ```
 
 
@@ -933,7 +933,7 @@ compare:
 ```{r compare-scatterplots}
 scatter_no_divs <- mcmc_scatter(
   as.array(fit_hier_NB_ncp),
-  pars = c("mu[4]", 'sigma_mu'),
+  pars = c("mu[3]", 'sigma_mu'),
   transform = list('sigma_mu' = "log"),
   size = 1,
   alpha = 0.3,
