@@ -1,4 +1,7 @@
 // hierarchical model with centered parameterization of mu
+functions{
+  
+}
 data {
   int<lower=1> N;
   int<lower=0> complaints[N];
@@ -29,6 +32,7 @@ model {
   
   mu ~ normal(alpha + building_data * zeta, sigma_mu);
   alpha ~ normal(log(7), 1);
+  print(alpha);
   beta ~ normal(-0.25, 0.5);
   inv_phi ~ normal(0, 1);
   zeta ~ normal(0,1);

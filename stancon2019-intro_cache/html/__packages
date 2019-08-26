@@ -1,0 +1,9 @@
+base
+ggplot2
+StanHeaders
+rstan
+dplyr
+lubridate
+bayesplot
+ggstance
+ggformula
