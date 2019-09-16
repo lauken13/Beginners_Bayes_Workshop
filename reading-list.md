@@ -1,8 +1,5 @@
 # Reading list
 
-* Compiled August, 2018 by Jonah Gabry
-
-
 Hope this list is helpful. If I forgot any topics please let me know!
 
 
@@ -188,15 +185,6 @@ Multinomial logit is a common discrete choice model (which may sometimes also be
 
 * Rob Trangucci's case study [Hierarchical multinomial logistic regression models in Stan](https://rawgit.com/rtrangucci/class_20170809/master/multinomial-logit/multinomial-logit-regression.html)
 
-
-
-### Stan vs other MCMC options
-
-* Appendix B in the [Stan Manual v2.17.0](https://github.com/stan-dev/stan/releases/download/v2.17.0/stan-reference-2.17.0.pdf) talks about differences between Stan and Bugs/Jags
-
-* The only MCMC option that I would say is close to on par with Stan as a (general purpose) MCMC tool is [PyMC3](https://docs.pymc.io/). I like the PyMC3 project a lot (they also have a good implementation of NUTS) but PyMC3 programs can only be run in Python, unlike Stan programs which can be used with any of the Stan interfaces (RStan, PyStan, CmdStan, MatlabStan, and all [the others](http://mc-stan.org/users/interfaces/index.html)). But if you are a diehard Python user and so are all of your collaborators you might give PyMC3 a try  
-
-* [Fitting Bayesian item response models in Stata and Stan](https://arxiv.org/abs/1601.03443) (paper comparing Stan against Stata's new MCMC implementation)
 
 ### Why do Bayesian modeling? 
 
